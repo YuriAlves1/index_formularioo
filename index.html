@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Formulário</h2>
+<form action="/submit_form" method="post">
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+    </div>
+    <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+    </div>
+    <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+    </div>
+    <div class="form-group">
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+    </div>
+    <h3>Dados profissionais</h3>
+    <div class="form-group">
+        <label>Natureza do Cargo:</label>
+        <label><input type="radio" name="cargo" value="administrativo"> Administrativo</label>
+        <label><input type="radio" name="cargo" value="financeiro"> Financeiro</label>
+        <label><input type="radio" name="cargo" value="recepcao"> Recepção</label>
+        <label><input type="radio" name="cargo" value="marketing"> Marketing</label>
+        <label><input type="radio" name="cargo" value="juridico"> Jurídico</label>
+        <label><input type="radio" name="cargo" value="tecnologia"> Tecnologia</label>
+        <label><input type="radio" name="cargo" value="vendas"> Vendas</label>
+        <label><input type="radio" name="cargo" value="recursos_humanos"> Recursos Humanos</label>
+    </div>
+    <div class="form-group">
+        <label>Área de Interesse:</label>
+        <label><input type="checkbox" name="interesse" value="biologia"> Biologia Ambiental</label>
+        <label><input type="checkbox" name="interesse" value="engenharia"> Engenharia</label>
+        <label><input type="checkbox" name="interesse" value="historia"> História</label>
+        <label><input type="checkbox" name="interesse" value="informatica"> Informática</label>
+        <label><input type="checkbox" name="interesse" value="direito"> Direito</label>
+        <label><input type="checkbox" name="interesse" value="medicina"> Medicina</label>
+        <label><input type="checkbox" name="interesse" value="educacao"> Educação</label>
+    </div>
+    <div class="form-group">
+        <label for="mini-curriculo">Mini-currículo:</label>
+        <textarea id="mini-curriculo" name="mini-curriculo" rows="4"></textarea>
+    </div>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</form>
+</body>
+</html>
